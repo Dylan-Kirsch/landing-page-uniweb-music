@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #000;
+    color: #fff;
+    width: 250px;
+    height: 205vh;
+    position: absolute;
+    bottom: -681px;
+}
+
+
+header {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+.header-buttons .btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logo {
+    padding: 10px;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 170px;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation ul li {
+    padding: 20px 10px 20px 13px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.navigation ul li a .icon {
+    margin-right: 31px;
+    margin-left: 14px;
+    transform: scale(1.4);
+}
+
+.navigation ul li:hover, .navigation ul li.active {
+    background-color: #282828;
+}
+
+.playlist-creation {
+    padding: 20px;
+    border-top: 1px solid #282828;
+    text-align: center;
+}
+
+.btn-create-playlist {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-create-playlist:hover {
+    background-color: #1ed760;
+}
+
+.playlist-creation p {
+    color: #b3b3b3;
+    font-size: 0.8em;
+}
+
+.btn-signup {
+    background-color: #1db954;
+    color: white;
+}
+
+.btn-login {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-signup:hover {
+    background-color: #1ed760;
+}
+
+.btn-login:hover {
+    border-color: #1ed760;
+    color: #1ed760;
+}
+
+/* ***** CONTENT LIBRARY ***** */
+
+#content-library {
+    margin-left: 250px;
+    background-color: #121212;
+    color: white;
+    min-height: 100vh;
+}
+
+#album {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+.album-card {
+    display: flex;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.album-card h2 {
+    font-size: 1em;
+    color: #fff;
+    margin-top: 32px;
+}
+
+.album-card p {
+    font-size: 0.8em;
+    color: #b3b3b3;
+}
+
+.disquePotion {
+    width: 175px;
+    height: 175px;
+    background-color: black;
+    border-radius: 55%;
+    background-image: url(./vinyle-potion.png);
+    background-size: 345px;
+    background-repeat: no-repeat;
+    background-position-x: -84px;
+    background-position-y: -10px;
+    transform: rotate(0deg);
+    box-shadow: 0px 0px 2px 1px #5f5f5f;
+}
+
+.disquePotion:hover {
+    animation: disque 4s linear infinite;
+}
+
+@keyframes disque {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
