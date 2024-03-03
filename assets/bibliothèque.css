@@ -168,25 +168,63 @@ header {
     color: #b3b3b3;
 }
 
+
+/* ****** ALCHIMY POTION ********* */
+
+
 .disquePotion {
     width: 175px;
     height: 175px;
     background-color: black;
     border-radius: 55%;
-    background-image: url(./vinyle-potion.png);
-    background-size: 345px;
+    background-image: url(./diques-vinyle/vinyle-potion.png);
+    background-size: 186px;
     background-repeat: no-repeat;
-    background-position-x: -84px;
-    background-position-y: -10px;
+    background-position-x: -7px;
+    background-position-y: -7px;
     transform: rotate(0deg);
     box-shadow: 0px 0px 2px 1px #5f5f5f;
 }
 
-.disquePotion:hover {
+.disque:hover {
     animation: disque 4s linear infinite;
 }
 
 @keyframes disque {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
+}
+
+
+/* ****** PORSCHE ********* */
+
+.disquePorsche {
+    width: 175px;
+    height: 175px;
+    background-color: black;
+    border-radius: 55%;
+    background-image: url(./diques-vinyle/porsche.png);
+    background-size: 191px;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: -8px;
+    transform: rotate(0deg);
+    box-shadow: 0px 0px 2px 1px #5f5f5f;
+}
+
+
+/* ****** DINO ********* */
+
+.disqueDino {
+    width: 175px;
+    height: 175px;
+    background-color: black;
+    border-radius: 55%;
+    background-image: url(./diques-vinyle/dino.png);
+    background-size: 191px;
+    background-repeat: no-repeat;
+    background-position-x: -8px;
+    background-position-y: -8px;
+    transform: rotate(0deg);
+    box-shadow: 0px 0px 2px 1px #5f5f5f;
 }
