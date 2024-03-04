@@ -146,6 +146,32 @@ header {
     transform: scale(2.3);
 }
 
+
+/* ***** FILTRE ******** */
+
+.filtre {
+    display: flex;
+    width: 15%;
+    padding: 20px 0 20px 13px;
+    justify-content: space-evenly;
+}
+
+.filtre .artiste {
+    border-radius: 50px;
+    color: #000;
+    font-weight: 600;
+    background-color: #f1f1f1;
+    padding: 8px;
+}
+
+.filtre .univers {
+    border-radius: 50px;
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #383838;
+    padding: 8px;
+}
+
 /* ***** CONTENU ARTISTE ***** */
 
 #artistes {
