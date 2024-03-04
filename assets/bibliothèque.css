@@ -146,17 +146,17 @@ header {
     transform: scale(2.3);
 }
 
+.checkbox {
+    display: none;
+}
+
 
 /* ***** FILTRE ******** */
 
-.filtre {
-    display: flex;
-    width: 15%;
-    padding: 20px 0 20px 13px;
-    justify-content: space-evenly;
-}
-
-.filtre .artiste {
+.artiste {
+    position: absolute;
+    left: 277px;
+    bottom: 468px;
     border-radius: 50px;
     color: #000;
     font-weight: 600;
@@ -164,7 +164,10 @@ header {
     padding: 8px;
 }
 
-.filtre .univers {
+.univers {
+    position: absolute;
+    left: 355px;
+    bottom: 468px;
     border-radius: 50px;
     color: #ffffff;
     font-weight: 600;
@@ -177,6 +180,7 @@ header {
 #artistes {
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
     flex-wrap: wrap;
 }
 
@@ -202,3 +206,109 @@ header {
 .nom {
     padding: 20px 60px 0 0;
 }
+
+
+
+
+
+
+/* ******* CONTENU UNIVERS ********** */
+
+#univers-music {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+#univers-music h2 {
+    position: absolute;
+    left: 269px;
+    bottom: 110px;
+    font-size: 1.7em;
+}
+
+.animes {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    border-radius: 14px;
+    margin: 25px;
+    background-image: url(/photo-anime.png);
+    background-size: 200px;
+    background-position-x: 77px;
+    background-position-y: 54px;
+    background-repeat: no-repeat;
+}
+
+.animes span {
+    position: relative;
+    left: 20px;
+    bottom: -14px;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.fantastiques {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    border-radius: 14px;
+    margin: 25px;
+    background-image: url(/photo-anime.png);
+    background-size: 200px;
+    background-position-x: 77px;
+    background-position-y: 54px;
+    background-repeat: no-repeat;
+}
+
+.fantastiques span {
+    position: relative;
+    left: 20px;
+    bottom: -14px;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.voitures {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    border-radius: 14px;
+    margin: 25px;
+    background-image: url(/photo-anime.png);
+    background-size: 200px;
+    background-position-x: 77px;
+    background-position-y: 54px;
+    background-repeat: no-repeat;
+}
+
+.voitures span {
+    position: relative;
+    left: 20px;
+    bottom: -14px;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.natures {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    border-radius: 14px;
+    margin: 25px;
+    background-image: url(/photo-anime.png);
+    background-size: 200px;
+    background-position-x: 77px;
+    background-position-y: 54px;
+    background-repeat: no-repeat;
+}
+
+.natures span {
+    position: relative;
+    left: 20px;
+    bottom: -14px;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+
