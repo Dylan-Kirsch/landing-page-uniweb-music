@@ -146,7 +146,7 @@ header {
     transform: scale(2.3);
 }
 
-.checkbox {
+.radio {
     display: none;
 }
 
@@ -158,10 +158,10 @@ header {
     left: 277px;
     bottom: 468px;
     border-radius: 50px;
-    color: #000;
     font-weight: 600;
-    background-color: #f1f1f1;
     padding: 8px;
+    color: #ffffff;
+    background-color: #383838;
 }
 
 .univers {
@@ -311,4 +311,29 @@ header {
     font-weight: 800;
 }
 
+#filtreUn:checked ~ #artistes {
+    display: flex;
+}
 
+#filtreUn:checked ~ .artiste {
+    background-color: #fff;
+    color: #000;
+}
+
+
+#filtreUn:not(:checked) ~ #artistes {
+    display: none;
+}
+
+#filtreDeux:checked ~ #univers-music {
+    display: flex;
+}
+
+#filtreDeux:checked ~ .univers {
+    background-color: #fff;
+    color: #000;
+}
+
+#filtreDeux:not(:checked) ~ #univers-music {
+    display: none;
+}
