@@ -15,58 +15,66 @@
 <body>
 
     <header>
-        <div class="header-content">
-            <div class="header-buttons">
-                <button class="btn btn-signup">S'inscrire</button>
-                <button class="btn btn-login">Se connecter</button>
-            </div>
-        </div>
-    </header>
-
-    <nav class="navbar">
 
         <div class="logo">
             <img src="assets/Spotify_Logo_CMYK_Green.png" alt="Spotify">
         </div>
 
-        <nav class="navigation">
-            <ul>
-                <li class="active">
-                    <a href="index.html" >
-                        <span class="icon home-icon">
-                            <i class="fa-solid fa-house-chimney-window" style="color: #ffffff;"></i>
-                        </span>Accueil
-                    </a>
-                </li>
-                <li>
-                    <a href="#search">
-                        <span class="icon search-icon">
-                            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
-                        </span>Rechercher
-                    </a>
-                </li>
-                <li>
-                    <a href="bibliothèque.html">
-                        <span class="icon library-icon">
-                            <i class="fa-solid fa-book-bookmark" style="color: #ffffff;"></i>
-                        </span>Bibliothèque
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <div class="header-content">
 
-        <div class="playlist-creation">
-            <button class="btn-create-playlist">Créez votre première playlist</button>
-            <p>C'est simple, nous allons vous aider</p>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #ffffff;"></i>
+            </div>
+
+            <input type="checkbox" id="user" class="checkbox">
+
+            <div class="dropProfil">
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            Utilisateur
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Accueil
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Titres
+                        </a>
+                    </li>
+
+                    <li class="deconnection">
+                        <a href="#">
+                            Artistes
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <label for="user" class="profil"></label>
+
         </div>
 
-    </nav>
+    </header>
+
 
     <div class="content">
 
         <div class="playlists">
+
+
+
+
+
             <div class="playlist-card">
 
+                
                 <div class="img">
                     <img src="assets/images-album/vinyle-dbz.png" alt="">
                 </div>
@@ -76,8 +84,8 @@
                 </button>
 
                 <h2>Dragon Ball-Z</h2>
-                <p>Le Lorem Ipsum est simplement du faux texte...</p>
-
+                <!-- <audio src="#" type="audio/mp3" controls></audio> -->
+                
             </div>
             
             <div class="playlist-card">
