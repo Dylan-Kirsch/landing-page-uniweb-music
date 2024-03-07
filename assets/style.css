@@ -206,6 +206,7 @@ audio {
 .front a {
     position: relative;
     bottom: -24px;
+    text-decoration: none;
 }
 
 .front p {
@@ -534,4 +535,197 @@ audio {
     50% {border-image: linear-gradient(150deg, rgb(0 0 0), rgba(251, 255, 1, 0.99)) 1;}
     75% {border-image: linear-gradient(250deg, rgb(0 0 0),rgba(191, 14, 79, 0.99)) 1;}
     100% {border-image: linear-gradient(360deg, rgb(0 0 0), rgba(8, 2, 179, 0.99)) 1;}
+}
+
+
+/* ******** FAVORIE ********** */
+
+
+.favorie {
+    position: absolute;
+    left: 15px;
+    bottom: -4px;
+    font-size: 1.6em;
+    background-clip: text;
+}
+
+
+/* COEUR 1 */
+
+#heart1:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart1:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 2 */
+
+#heart2:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart2:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 3 */
+
+#heart3:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart3:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 4 */
+
+#heart4:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart4:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 5 */
+
+#heart5:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart5:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 6 */
+
+#heart6:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart6:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 7 */
+
+#heart7:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart7:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 8 */
+
+#heart8:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart8:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 9 */
+
+#heart9:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart9:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 10 */
+
+#heart10:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart10:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 11 */
+
+#heart11:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart11:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 12 */
+
+#heart12:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart12:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 13 */
+
+#heart13:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart13:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 14 */
+
+#heart14:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart14:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 15 */
+
+#heart15:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart15:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
 }
