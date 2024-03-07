@@ -131,6 +131,7 @@ h1{
     display: flex;
     font-size: 25px;
     font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .playlist-creation {
@@ -231,18 +232,20 @@ h2 {
 }
 
 .back img {
-    width: 238px;
-    height: 240px;
-    object-fit: cover;
-    border-radius: 8px;
+    width: 100%; 
+    height: 35px; 
+    display: block; 
+   
 }
 
 .back .avatar img {
+    width: 237px;
     left: 61px;
+    height: 266px;
     position: absolute;
     bottom: -67px;
-    border-radius: 8px 8px 0px 0px;
 }
+
 
 audio {
     background-color: #fff;
@@ -955,4 +958,78 @@ i:hover{
 }
 .volume-bar .progress-bar:hover .progress::after{
     --size: .8em;
+}
+
+
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .search-box {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .logo img {
+        max-width: 50px;
+    }
+
+    .music-player {
+        height: auto;
+        flex-direction: column;
+        padding: 0.5em;
+    }
+
+    .song-bar {
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+    }
+
+    .song-infos {
+        flex-direction: row;
+    }
+
+    .image-container {
+        --size: 3em;
+    }
+
+    .icons,
+    .control-buttons,
+    .other-features {
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .progress-controller {
+        gap: 0.5em;
+    }
+
+    .progress-container,
+    .volume-bar .progress-bar {
+        width: 90%;
+    }
+
+    .volume-bar {
+        flex-direction: row;
+    }
+
+    .btn-play img {
+        width: 30px; /* Adjust the size of play button */
+    }
 }
