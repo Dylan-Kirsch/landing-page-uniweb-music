@@ -39,9 +39,72 @@ header {
     color: #fff;
 }
 
-.search {
+.header-content span {
+    background-color: #0004b5;
+    color: #fff;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    letter-spacing: 0.8px;
+}
+
+.header-content span:hover {
+    background-color: #0017f7;
+}
+
+.search-box {
     margin-right: 60px;
     margin-left: 65px;
+}
+
+.input-search {
+    height: 29px;
+    width: 0px;
+    border-style: none;
+    padding-left: 29px;
+    font-size: 1em;
+    letter-spacing: 2px;
+    outline: none;
+    transition: all .5s ease-in-out;
+    color: #ff0000;
+    border-radius: 18px;
+}
+
+.input-search::placeholder {
+    color: #000000;
+    font-size: 1em;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.btn-search {
+    width: 32px;
+    height: 32px;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    color: #000000;
+    background-color: #dd0000;
+}
+
+.btn-search:focus ~ .input-search {
+    width: 211px;
+    background-color: #fff;
+    margin-left: 10px;
+    transition: all 500ms cubic-bezier(.58,0,.19,1);
+    box-shadow: -36px 13px 28px -6px #000;
+}
+
+.input-search:focus {
+    width: 0px;
+    background-color: #f9f9f9;
+    margin-left: 11px;
+    transition: all 500ms cubic-bezier(.58,0,.19,1);
+    box-shadow: -36px 13px 28px -6px #000;
 }
 
 header .profil {
@@ -541,8 +604,8 @@ audio {
 
 .favorie {
     position: absolute;
-    left: 15px;
-    bottom: -4px;
+    left: 204px;
+    bottom: -9px;
     font-size: 1.6em;
     background-clip: text;
 }
