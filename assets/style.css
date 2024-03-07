@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #000;
 }
 
 .checkbox {
@@ -32,8 +33,14 @@ header {
     padding: 10px 30px;
 }
 
+.header-content a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .search {
     margin-right: 60px;
+    margin-left: 65px;
 }
 
 header .profil {
@@ -44,42 +51,6 @@ header .profil {
     background-size: 90px;
     background-position-x: -21px;
     background-position-y: -9px;
-    cursor: pointer;
-}
-
-.dropProfil {
-    position: absolute;
-    left: 1241px;
-    bottom: 400px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    background-color: #1e1e1e;
-    z-index: 2;
-}
-
-.dropProfil ul {
-    padding: 0;
-}
-
-.dropProfil li {
-    list-style: none;
-    padding: 10px;
-}
-
-
-
-.dropProfil li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-
-#user:checked ~ .dropProfil {
-    opacity: 1;
-}
-
-#user:not(:checked) ~ .dropProfil {
-    opacity: 0;
 }
 
 
@@ -90,40 +61,6 @@ header .profil {
 
 .logo img {
     max-width: 170px;
-}
-
-.navigation {
-    margin-top: 20px;
-}
-
-.navigation ul {
-    list-style: none;
-    padding: 0;
-}
-
-.navigation ul li {
-    padding: 20px 10px 20px 13px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.navigation ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    font-size: 1.4em;
-}
-
-.navigation ul li a .icon {
-    margin-right: 20px;
-    margin-left: 2px;
-    transform: scale(1);
-}
-
-.navigation ul li:hover, .navigation ul li.active {
-    background-color: #282828;
 }
 
 .playlist-creation {
@@ -172,10 +109,17 @@ header .profil {
 }
 
 
+h2 {
+    background-color: #000;
+    color: #fff;
+    margin: 13px 0px;
+    padding-left: 32px;
+}
+
 .content {
     background-color: #121212;
     color: white;
-    min-height: 100vh;
+    overflow: hidden;
 }
 
 
@@ -195,8 +139,10 @@ header .profil {
     padding: 15px;
     text-align: center;
     position: relative;
+    perspective: 800px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
 }
-
 
 
 .playlist-card:hover {
@@ -208,26 +154,84 @@ header .profil {
     transform: scale(1.03);
 }
 
-.img img {
-    width: 190px;
-    height: 190px;
+.front img {
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.back img {
+    width: 238px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.back .avatar img {
+    left: 61px;
+    position: absolute;
+    bottom: -67px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+audio {
+    background-color: #fff;
+    position: relative;
+    bottom: -116px;
+    left: 30px;
+    transform: scale(0.794);
+    border-radius: 0px 0px 10px 10px;
 }
 
 .img {
     height: 27vh;
 }
 
-.playlist-card h2 {
+.front h2 {
     font-size: 1em;
     color: #fff;
-    margin-top: 32px;
+    margin: 32px 0px 0px 0px;
+    padding: 0;
+    background: none;
 }
 
-.playlist-card p {
+.front p {
     font-size: 0.8em;
     color: #b3b3b3;
+}
+
+.front {
+    transition: opacity .5s linear;
+    left: 26px;
+    opacity: 1;
+}
+
+.front, .back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back {
+    display: flex;
+    transition: opacity .5s linear;
+    transform: rotateY(180deg);
+    bottom: 112px;
+    left: 0px;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.back p:nth-child(2) {
+    position: relative;
+    bottom: -105px;
+}
+
+.back p:nth-child(3) {
+    position: relative;
+    bottom: -105px;
 }
 
 
@@ -257,5 +261,238 @@ header .profil {
 .btn-play img {
     width: 50%; 
     display: block;
+}
+
+
+
+
+
+
+/* ****** CARD FLIP ******* */
+
+
+#flip1:checked ~ .playlist-card1 {
+    transform:rotateY(-180deg);
+    transition: 1.3s;
+}
+  
+#flip1:checked ~ .playlist-card1 .back {
+    opacity: 1;
+    transform: rotateY( 180deg );
+}
+
+#flip1:not(:checked) ~ .playlist-card1 {
+    transition: 1.3s;
+}
+
+/* FLIP 2 */
+
+#flip2:checked ~ .playlist-card2 {
+    transform:rotateY(-180deg);
+    transition: 1.3s;
+}
+
+#flip2:not(:checked) ~ .playlist-card2 {
+    transition: 1.3s;
+}
+  
+#flip2:checked ~ .playlist-card2 .back {
+    opacity: 1;
+    transform: rotateY( 180deg );
+}
+
+
+/* FLIP 3 */
+
+#flip3:checked ~ .playlist-card3 {
+    transform:rotateY(-180deg);
+    transition: 1.3s;
+}
+
+#flip3:not(:checked) ~ .playlist-card3 {
+    transition: 1.3s;
+}
+  
+#flip3:checked ~ .playlist-card3 .back {
+    opacity: 1;
+    transform: rotateY( 180deg );
+}
+
+
+/* FLIP 4 */
+
+#flip4:checked ~ .playlist-card4 {
+    transform:rotateY(-180deg);
+    transition: 1.3s;
+}
+
+#flip4:not(:checked) ~ .playlist-card4 {
+    transition: 1.3s;
+}
+  
+#flip4:checked ~ .playlist-card4 .back {
+    opacity: 1;
+    transform: rotateY( 180deg );
+}
+
+/* FLIP 5 */
+
+#flip5:checked ~ .playlist-card5 {
+    transform:rotateY(-180deg);
+    transition: 1.3s;
+}
+
+#flip5:not(:checked) ~ .playlist-card5 {
+    transition: 1.3s;
+}
+  
+#flip5:checked ~ .playlist-card5 .back {
+    opacity: 1;
+    transform: rotateY( 180deg );
+}
+
+/* FLIP 6 */
+
+#flip6:checked ~ .playlist-card6 {
+    transform:rotateY(-180deg);
+    transition: 1.3s;
+}
+
+#flip6:not(:checked) ~ .playlist-card6 {
+    transition: 1.3s;
+}
+  
+#flip6:checked ~ .playlist-card6 .back {
+    opacity: 1;
+    transform: rotateY( 180deg );
+}
+
+/* FLIP 7 */
+
+#flip7:checked ~ .playlist-card7 {
+    transform:rotateY(-180deg);
+    transition: 1.3s;
+}
+
+#flip7:not(:checked) ~ .playlist-card7 {
+    transition: 1.3s;
+}
+  
+#flip7:checked ~ .playlist-card7 .back {
+    opacity: 1;
+    transform: rotateY( 180deg );
+}
+
+
+/* FLIP 9 */
+
+#flip9:checked ~ .playlist-card9 {
+    transform:rotateY(-180deg);
+    transition: 1.3s;
+}
+
+#flip9:not(:checked) ~ .playlist-card9 {
+    transition: 1.3s;
+}
+  
+#flip9:checked ~ .playlist-card9 .back {
+    opacity: 1;
+    transform: rotateY( 180deg );
+}
+
+/* FLIP 10 */
+
+#flip10:checked ~ .playlist-card10 {
+    transform:rotateY(-180deg);
+    transition: 1.3s;
+}
+
+#flip10:not(:checked) ~ .playlist-card10 {
+    transition: 1.3s;
+}
+  
+#flip10:checked ~ .playlist-card10 .back {
+    opacity: 1;
+    transform: rotateY( 180deg );
+}
+
+/* FLIP 11 */
+
+#flip11:checked ~ .playlist-card11 {
+    transform:rotateY(-180deg);
+    transition: 1.3s;
+}
+
+#flip11:not(:checked) ~ .playlist-card11 {
+    transition: 1.3s;
+}
+  
+#flip11:checked ~ .playlist-card11 .back {
+    opacity: 1;
+    transform: rotateY( 180deg );
+}
+
+/* FLIP 12 */
+
+#flip12:checked ~ .playlist-card12 {
+    transform:rotateY(-180deg);
+    transition: 1.3s;
+}
+
+#flip12:not(:checked) ~ .playlist-card12 {
+    transition: 1.3s;
+}
+  
+#flip12:checked ~ .playlist-card12 .back {
+    opacity: 1;
+    transform: rotateY( 180deg );
+}
+
+/* FLIP 13 */
+
+#flip13:checked ~ .playlist-card13 {
+    transform:rotateY(-180deg);
+    transition: 1.3s;
+}
+
+#flip13:not(:checked) ~ .playlist-card13 {
+    transition: 1.3s;
+}
+  
+#flip13:checked ~ .playlist-card13 .back {
+    opacity: 1;
+    transform: rotateY( 180deg );
+}
+
+/* FLIP 14 */
+
+#flip14:checked ~ .playlist-card14 {
+    transform:rotateY(-180deg);
+    transition: 1.3s;
+}
+
+#flip14:not(:checked) ~ .playlist-card14 {
+    transition: 1.3s;
+}
+  
+#flip14:checked ~ .playlist-card14 .back {
+    opacity: 1;
+    transform: rotateY( 180deg );
+}
+
+/* FLIP 15 */
+
+#flip15:checked ~ .playlist-card15 {
+    transform:rotateY(-180deg);
+    transition: 1.3s;
+}
+
+#flip15:not(:checked) ~ .playlist-card15 {
+    transition: 1.3s;
+}
+  
+#flip15:checked ~ .playlist-card15 .back {
+    opacity: 1;
+    transform: rotateY( 180deg );
 }
 
