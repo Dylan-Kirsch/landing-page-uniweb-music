@@ -2,8 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #080935;
     background-size: cover;
+    background-image: url(../assets/gradient.jpg);
 }
 
 .checkbox {
@@ -165,7 +165,6 @@ h2 {
     width: 238px;
     height: 223px;
     object-fit: cover;
-    border-radius: 8px;
 }
 
 .back img {
@@ -188,7 +187,6 @@ audio {
     bottom: -116px;
     left: 30px;
     transform: scale(0.794);
-    border-radius: 0px 0px 10px 10px;
 }
 
 .img {
