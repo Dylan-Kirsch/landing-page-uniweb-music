@@ -15,28 +15,62 @@
 <body>
 
     <header>
-
+   
         <div class="logo">
-            <img src="assets/Spotify_Logo_CMYK_Green.png" alt="Spotify">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Spotify">
+            </a>
         </div>
+      <h1>WebMusic</h1>
 
         <div class="header-content">
 
-            <a href="index.html">
-                <span>Bibliothèque</span>
-            </a>
+            <div class="search-box">
+                
 
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #ffffff;"></i>
+                <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #ffffff;"></i>
+                </button>
+
             </div>
 
-            <div class="profil"></div>
+            <input type="checkbox" id="user" class="checkbox">
+
+            <div class="dropProfil">
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            Bibliothèque
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Titres
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <a href="#">
+                            Artistes
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            Recherche
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <label for="user" class="profil"></label>
 
         </div>
 
     </header>
 
-    <h2>Groupe 1</h2>
+    <h2>Ecoutés récemment</h2>
 
     <section class="content">
 
@@ -52,16 +86,26 @@
                     <div class="img">
                         <img src="assets/images-album/vinyle-dbz.png" alt="">
                     </div>
-
+                    
+                <a href="https://dragon-ball-jer.000webhostapp.com/" target="_blank"> 
                     <button class="btn-play">
                         <img src="assets/play_14441317.png" alt="Play"> 
                     </button>
+                </a>
 
                     <a href="">
                         <h2>Dragon Ball-Z</h2>
                     </a>
 
-                    <p>Jeremy Dumange</p>
+                    <p>Jérémy</p>
+
+                    <input type="checkbox" id="heart1" class="checkbox">
+                    <label for="heart1" class="favorie">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+
+                    <i class="fa-solid fa-circle-plus"></i>
+
                 </div>
 
                 <div class="back">
@@ -69,7 +113,7 @@
                         <img src="assets/avatars/dbz.png" alt="">
                     </div>
 
-                    <audio src="#" type="audio/mp3" controls></audio>
+                    <audio src="assets/musiques/jeremy.mp4" type="audio/mp3" controls></audio>
                 </div>
             
             </label>
@@ -85,15 +129,25 @@
                         <img src="assets/images-album/fond-feuilles-logo.png" alt="">
                     </div>
 
+                <a href="https://dinodynasty.000webhostapp.com/" target="_blank"> 
                     <button class="btn-play">
                         <img src="assets/play_14441317.png" alt="Play"> 
                     </button>
+                </a>
 
                     <a href="">
                         <h2>DinoDynasty</h2>
                     </a>
 
-                    <p>Dylan Kirsch</p>
+                    <p>Dylan</p>
+
+                    <input type="checkbox" id="heart2" class="checkbox">
+                    <label for="heart2" class="favorie">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+
+                    <i class="fa-solid fa-circle-plus"></i>
+
                 </div>
 
                 <div class="back">
@@ -101,7 +155,7 @@
                         <img src="assets/avatars/dino.png" alt="">
                     </div>
 
-                    <audio src="#" type="audio/mp3" controls></audio>
+                    <audio src="assets/musiques/dylan.mpeg" type="audio/mp3" controls></audio>
                     
                 </div>
             
@@ -118,15 +172,25 @@
                         <img src="assets/images-album/porsche.png" alt="">
                     </div>
 
+                <a href="https://porschefactory.000webhostapp.com/" target="_blank">
                     <button class="btn-play">
                         <img src="assets/play_14441317.png" alt="Play"> 
                     </button>
+                </a>
 
                     <a href="">
                         <h2>Porsche</h2>
                     </a>
 
-                    <p>Damien Ben4tez</p>
+                    <p>Damien.B</p>
+
+                    <input type="checkbox" id="heart3" class="checkbox">
+                    <label for="heart3" class="favorie">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+
+                    <i class="fa-solid fa-circle-plus"></i>
+
                 </div>
 
                 <div class="back">
@@ -134,7 +198,7 @@
                         <img src="assets/avatars/porsche.png" alt="">
                     </div>
 
-                    <audio src="#" type="audio/mp3" controls></audio>
+                    <audio src="assets/musiques/damien.b.mp3" type="audio/mp3" controls></audio>
                     
                 </div>
             
@@ -151,15 +215,25 @@
                         <img src="assets/images-album/alchimy-potion.png" alt="">
                     </div>
 
+                <a href="https://alchimypotion.000webhostapp.com" target="_blank">
                     <button class="btn-play">
                         <img src="assets/play_14441317.png" alt="Play"> 
                     </button>
+                </a>
 
                     <a href="">
                         <h2>AlchimyPotion</h2>
                     </a>
 
-                    <p>Gabriella Serves</p>
+                    <p>Gabriella</p>
+
+                    <input type="checkbox" id="heart4" class="checkbox">
+                    <label for="heart4" class="favorie">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+
+                    <i class="fa-solid fa-circle-plus"></i>
+
                 </div>
 
                 <div class="back">
@@ -167,7 +241,7 @@
                         <img src="assets/avatars/potion.png" alt="">
                     </div>
 
-                    <audio src="#" type="audio/mp3" controls></audio>
+                    <audio src="assets/musiques/gaby.mpeg" type="audio/mp3" controls></audio>
                     
                 </div>
             
@@ -177,356 +251,6 @@
 
             <input type="checkbox" id="flip5" class="checkbox">
             <label for="flip5" class="playlist-card playlist-card5">
-                
-
-                <div class="front">
-                    <div class="img">
-                        <img src="assets/images-album/annee-80-90.png" alt="">
-                    </div>
-
-                    <button class="btn-play">
-                        <img src="assets/play_14441317.png" alt="Play"> 
-                    </button>
-
-                    <a href="">
-                        <h2>Les années 80-90</h2>
-                    </a>
-                    
-                    <p>Nathalie Robin</p>
-                </div>
-
-                <div class="back">
-                    <div class="avatar">
-                        <img src="assets/avatars/annee-80.png" alt="">
-                    </div>
-
-                    <audio src="#" type="audio/mp3" controls></audio>
-                    
-                </div>
-            
-            </label>
-        </div>
-    </section>
-    
-    <!-- CARD 6 -->
-
-    <h2>Groupe 2</h2>
-
-    <section class="content">
-
-        <div class="playlists">
-
-            <input type="checkbox" id="flip6" class="checkbox">
-            <label for="flip6" class="playlist-card playlist-card6">
-                
-
-                <div class="front">
-                    <div class="img">
-                        <img src="assets/images-album/empire-gaming.png" alt="">
-                    </div>
-
-                    <button class="btn-play">
-                        <img src="assets/play_14441317.png" alt="Play"> 
-                    </button>
-
-                    <a href="">
-                        <h2>Empire Gaming</h2>
-                    </a>
-
-                    <p>Matisse</p>
-                </div>
-
-                <div class="back">
-                    <div class="avatar">
-                        <img src="assets/avatars/gaming.png" alt="">
-                    </div>
-
-                    <audio src="#" type="audio/mp3" controls></audio>
-                    
-                </div>
-            
-            </label>
-
-    <!-- CARD 7 -->
-
-            <input type="checkbox" id="flip7" class="checkbox">
-            <label for="flip7" class="playlist-card playlist-card7">
-                
-
-                <div class="front">
-                    <div class="img">
-                        <img src="assets/images-album/bracadabra.png" alt="">
-                    </div>
-
-                    <button class="btn-play">
-                        <img src="assets/play_14441317.png" alt="Play"> 
-                    </button>
-
-                    <a href="">
-                        <h2>Bracadabras</h2>
-                    </a>
-
-                    <p>Théo</p>
-                </div>
-
-                <div class="back">
-                    <div class="avatar">
-                        <img src="assets/avatars/magie.png" alt="">
-                    </div>
-
-                    <audio src="#" type="audio/mp3" controls></audio>
-                    
-                </div>
-            
-            </label>
-            
-    <!-- CARD 8 -->
-
-            <input type="checkbox" id="flip8" class="checkbox">
-            <label for="flip8" class="playlist-card playlist-card8">
-                
-
-                <div class="front">
-                    <div class="img">
-                        <img src="assets/images-album/one-piece.png" alt="">
-                    </div>
-
-                    <button class="btn-play">
-                        <img src="assets/play_14441317.png" alt="Play"> 
-                    </button>
-
-                    <a href="">
-                        <h2>One Piece</h2>
-                    </a>
-
-                    <p>Anis</p>
-                </div>
-
-                <div class="back">
-                    <div class="avatar">
-                        <img src="assets/avatars/one-piece.png" alt="">
-                    </div>
-
-                    <audio src="#" type="audio/mp3" controls></audio>
-                    
-                </div>
-            
-            </label>
-           
-
-    <!-- CARD 9 -->
-
-            <input type="checkbox" id="flip9" class="checkbox">
-            <label for="flip9" class="playlist-card playlist-card9">
-                
-
-                <div class="front">
-                    <div class="img">
-                        <img src="assets/images-album/paris.png" alt="">
-                    </div>
-
-                    <button class="btn-play">
-                        <img src="assets/play_14441317.png" alt="Play"> 
-                    </button>
-
-                    <a href="">
-                        <h2>Paris</h2>
-                    </a>
-
-                    <p>Milos</p>
-                </div>
-
-                <div class="back">
-                    <div class="avatar">
-                        <img src="assets/avatars/paris.png" alt="">
-                    </div>
-
-                    <audio src="#" type="audio/mp3" controls></audio>
-                    
-                </div>
-            
-            </label>
-            
-        
-    <!-- CARD 10 -->
-
-            <input type="checkbox" id="flip10" class="checkbox">
-            <label for="flip10" class="playlist-card playlist-card10">
-                
-
-                <div class="front">
-                    <div class="img">
-                        <img src="assets/images-album/Vaï's-blog.png" alt="">
-                    </div>
-
-                    <button class="btn-play">
-                        <img src="assets/play_14441317.png" alt="Play"> 
-                    </button>
-
-                    <a href="">
-                        <h2>Vai's Blog</h2>
-                    </a>
-
-                    <p>Pauline</p>
-                </div>
-
-                <div class="back">
-                    <div class="avatar">
-                        <img src="assets/avatars/chat.png" alt="">
-                    </div>
-
-                    <audio src="#" type="audio/mp3" controls></audio>
-                    
-                </div>
-            
-            </label>
-
-        </div>
-    </section>
-
-    <!-- CARD 11 -->
-
-    <h2>Groupe 3</h2>
-
-    <section class="content">
-
-        <div class="playlists">
-
-            <input type="checkbox" id="flip11" class="checkbox">
-            <label for="flip11" class="playlist-card playlist-card11">
-                
-
-                <div class="front">
-                    <div class="img">
-                        <img src="assets/images-album/cinema.png" alt="">
-                    </div>
-
-                    <button class="btn-play">
-                        <img src="assets/play_14441317.png" alt="Play"> 
-                    </button>
-
-                    <a href="">
-                        <h2>Cinema</h2>
-                    </a>
-
-                    <p>Ilan</p>
-                </div>
-
-                <div class="back">
-                    <div class="avatar">
-                        <img src="assets/avatars/cinema.png" alt="">
-                    </div>
-
-                    <audio src="#" type="audio/mp3" controls></audio>
-                    
-                </div>
-            
-            </label>
-
-    <!-- CARD 12 -->
-
-            <input type="checkbox" id="flip12" class="checkbox">
-            <label for="flip12" class="playlist-card playlist-card12">
-                
-
-                <div class="front">
-                    <div class="img">
-                        <img src="assets/images-album/louve.png" alt="">
-                    </div>
-
-                    <button class="btn-play">
-                        <img src="assets/play_14441317.png" alt="Play"> 
-                    </button>
-
-                    <a href="">
-                        <h2>La Louve Noir</h2>
-                    </a>
-
-                    <p>Elodie</p>
-                </div>
-
-                <div class="back">
-                    <div class="avatar">
-                        <img src="assets/avatars/loup.png" alt="">
-                    </div>
-
-                    <audio src="#" type="audio/mp3" controls></audio>
-                    
-                </div>
-            
-            </label>
-
-    <!-- CARD 13 -->
-
-            <input type="checkbox" id="flip13" class="checkbox">
-            <label for="flip13" class="playlist-card playlist-card13">
-                
-
-                <div class="front">
-                    <div class="img">
-                        <img src="assets/images-album/renard.png" alt="">
-                    </div>
-
-                    <button class="btn-play">
-                        <img src="assets/play_14441317.png" alt="Play"> 
-                    </button>
-
-                    <a href="">
-                        <h2>Parc des milles roses</h2>
-                    </a>
-
-                    <p>Guillame</p>
-                </div>
-
-                <div class="back">
-                    <div class="avatar">
-                        <img src="assets/avatars/renard.png" alt="">
-                    </div>
-
-                    <audio src="#" type="audio/mp3" controls></audio>
-                    
-                </div>
-            
-            </label>
-
-    <!-- CARD 14 -->
-
-            <input type="checkbox" id="flip14" class="checkbox">
-            <label for="flip14" class="playlist-card playlist-card14">
-                
-
-                <div class="front">
-                    <div class="img">
-                        <img src="assets/images-album/mangas-anime.png" alt="">
-                    </div>
-
-                    <button class="btn-play">
-                        <img src="assets/play_14441317.png" alt="Play"> 
-                    </button>
-
-                    <a href="">
-                        <h2>Mangas Passion</h2>
-                    </a>
-
-                    <p>Damien F</p>
-                </div>
-
-                <div class="back">
-                    <div class="avatar">
-                        <img src="assets/avatars/mangas.png" alt="">
-                    </div>
-
-                    <audio src="#" type="audio/mp3" controls></audio>
-                    
-                </div>
-            
-            </label>
-            
-
-    <!-- CARD 15 -->
-
-            <input type="checkbox" id="flip15" class="checkbox">
-            <label for="flip15" class="playlist-card playlist-card15">
                 
 
                 <div class="front">
@@ -543,6 +267,14 @@
                     </a>
 
                     <p>Chloé</p>
+
+                    <input type="checkbox" id="heart5" class="checkbox">
+                    <label for="heart5" class="favorie">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+
+                    <i class="fa-solid fa-circle-plus"></i>
+
                 </div>
 
                 <div class="back">
@@ -555,9 +287,513 @@
                 </div>
             
             </label>
+
+        </div>
+    </section>
+    
+    <!-- CARD 6 -->
+
+    <h2>Pour commencer</h2>
+
+    <section class="content">
+
+        <div class="playlists">
+
+            <input type="checkbox" id="flip6" class="checkbox">
+            <label for="flip6" class="playlist-card playlist-card6">
+                
+
+                <div class="front">
+                    <div class="img">
+                        <img src="assets/images-album/empire-gaming.png" alt="">
+                    </div>
+
+                <a href="http://empire-gaming.trveon.com/" target="_blank">
+                    <button class="btn-play">
+                        <img src="assets/play_14441317.png" alt="Play"> 
+                    </button>
+                </a>
+                    <a href="">
+                        <h2>Empire Gaming</h2>
+                    </a>
+
+                    <p>Matisse</p>
+
+                    <input type="checkbox" id="heart6" class="checkbox">
+                    <label for="heart6" class="favorie">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+
+                    <i class="fa-solid fa-circle-plus"></i>
+
+                </div>
+
+                <div class="back">
+                    <div class="avatar">
+                        <img src="assets/avatars/gaming.png" alt="">
+                    </div>
+
+                    <audio src="assets/musiques/matisse.mp3" type="audio/mp3" controls></audio>
+                    
+                </div>
+            
+            </label>
+
+    <!-- CARD 7 -->
+
+            <input type="checkbox" id="flip7" class="checkbox">
+            <label for="flip7" class="playlist-card playlist-card7">
+                
+
+                <div class="front">
+                    <div class="img">
+                        <img src="assets/images-album/bracadabra.png" alt="">
+                    </div>
+
+                <a href="https://bracadabras.trveon.com/" target="_blank">
+                    <button class="btn-play">
+                        <img src="assets/play_14441317.png" alt="Play"> 
+                    </button>
+                </a>
+
+                    <a href="">
+                        <h2>Bracadabras</h2>
+                    </a>
+
+                    <p>Théo</p>
+
+                    <input type="checkbox" id="heart7" class="checkbox">
+                    <label for="heart7" class="favorie">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+
+                    <i class="fa-solid fa-circle-plus"></i>
+
+                </div>
+
+                <div class="back">
+                    <div class="avatar">
+                        <img src="assets/avatars/magie.png" alt="">
+                    </div>
+
+                    <audio src="assets/musiques/theo.mp3" type="audio/mp3" controls></audio>
+                    
+                </div>
+            
+            </label>
+            
+    <!-- CARD 8 -->
+
+            <input type="checkbox" id="flip8" class="checkbox">
+            <label for="flip8" class="playlist-card playlist-card8">
+                
+
+                <div class="front">
+                    <div class="img">
+                        <img src="assets/images-album/one-piece.png" alt="">
+                    </div>
+
+                <a href="https://opfc.000webhostapp.com/" target="_blank">
+                    <button class="btn-play">
+                        <img src="assets/play_14441317.png" alt="Play"> 
+                    </button>
+                </a>
+
+                    <a href="">
+                        <h2>One Piece</h2>
+                    </a>
+
+                    <p>Anis</p>
+
+                    <input type="checkbox" id="heart8" class="checkbox">
+                    <label for="heart8" class="favorie">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+
+                    <i class="fa-solid fa-circle-plus"></i>
+
+                </div>
+
+                <div class="back">
+                    <div class="avatar">
+                        <img src="assets/avatars/one-piece.png" alt="">
+                    </div>
+
+                    <audio src="assets/musiques/anis.mp3" type="audio/mp3" controls></audio>
+                    
+                </div>
+            
+            </label>
+           
+
+    <!-- CARD 9 -->
+
+            <input type="checkbox" id="flip9" class="checkbox">
+            <label for="flip9" class="playlist-card playlist-card9">
+                
+
+                <div class="front">
+                    <div class="img">
+                        <img src="assets/images-album/cinema.png" alt="">
+                    </div>
+
+                <a href="https://hiess-cinema.go.yo.fr/" target="_blank">
+                    <button class="btn-play">
+                        <img src="assets/play_14441317.png" alt="Play"> 
+                    </button>
+                </a>
+
+                    <a href="">
+                        <h2>Cinema</h2>
+                    </a>
+
+                    <p>Ilan</p>
+
+                    <input type="checkbox" id="heart9" class="checkbox">
+                    <label for="heart9" class="favorie">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+
+                    <i class="fa-solid fa-circle-plus"></i>
+
+                </div>
+
+                <div class="back">
+                    <div class="avatar">
+                        <img src="assets/avatars/cinema.png" alt="">
+                    </div>
+
+                    <audio src="assets/musiques/illan.mpeg" type="audio/mp3" controls></audio>
+                    
+                </div>
+            
+            </label>
+            
+        
+    <!-- CARD 10 -->
+
+            <input type="checkbox" id="flip10" class="checkbox">
+            <label for="flip10" class="playlist-card playlist-card10">
+                
+
+                <div class="front">
+                    <div class="img">
+                        <img src="assets/images-album/louve.png" alt="">
+                    </div>
+
+                <a href=" https://louve-noire.go.yo.fr/" target="_blank">
+                    <button class="btn-play">
+                        <img src="assets/play_14441317.png" alt="Play"> 
+                    </button>
+                </a>
+
+                    <a href="">
+                        <h2>La Louve Noir</h2>
+                    </a>
+
+                    <p>Elodie</p>
+
+                    <input type="checkbox" id="heart10" class="checkbox">
+                    <label for="heart10" class="favorie">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+
+                    <i class="fa-solid fa-circle-plus"></i>
+
+                </div>
+
+                <div class="back">
+                    <div class="avatar">
+                        <img src="assets/avatars/loup.png" alt="">
+                    </div>
+
+                    <audio src="assets/musiques/elodie.mpeg" type="audio/mp3" controls></audio>
+                    
+                </div>
+            
+            </label>
+
+        </div>
+    </section>
+
+    <!-- CARD 11 -->
+
+    <h2>Essayer autre chose</h2>
+
+    <section class="content">
+
+        <div class="playlists">
+
+            <input type="checkbox" id="flip11" class="checkbox">
+            <label for="flip11" class="playlist-card playlist-card11">
+                
+
+                <div class="front">
+                    <div class="img">
+                        <img src="assets/images-album/paris.png" alt="">
+                    </div>
+
+                <a href="https://paris-cnam.000webhostapp.com/" target="_blank">
+                    <button class="btn-play">
+                        <img src="assets/play_14441317.png" alt="Play"> 
+                    </button>
+                </a>
+
+                    <a href="">
+                        <h2>Paris</h2>
+                    </a>
+
+                    <p>Milos</p>
+
+                    <input type="checkbox" id="heart11" class="checkbox">
+                    <label for="heart11" class="favorie">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+
+                    <i class="fa-solid fa-circle-plus"></i>
+
+                </div>
+
+                <div class="back">
+                    <div class="avatar">
+                        <img src="assets/avatars/paris.png" alt="">
+                    </div>
+
+                    <audio src="assets/musiques/milos.mp3" type="audio/mp3" controls></audio>
+                    
+                </div>
+            
+            </label>
+
+    <!-- CARD 12 -->
+
+            <input type="checkbox" id="flip12" class="checkbox">
+            <label for="flip12" class="playlist-card playlist-card12">
+                
+
+                <div class="front">
+                    <div class="img">
+                        <img src="assets/images-album/Vaï's-blog.png" alt="">
+                    </div>
+
+                <a href="https://vais-blog.000webhostapp.com/" target="_blank">
+                    <button class="btn-play">
+                        <img src="assets/play_14441317.png" alt="Play"> 
+                    </button>
+                </a>
+
+                    <a href="">
+                        <h2>Vai's Blog</h2>
+                    </a>
+
+                    <p>Pauline</p>
+
+                    <input type="checkbox" id="heart12" class="checkbox">
+                    <label for="heart12" class="favorie">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+
+                    <i class="fa-solid fa-circle-plus"></i>
+
+                </div>
+
+                <div class="back">
+                    <div class="avatar">
+                        <img src="assets/avatars/chat.png" alt="">
+                    </div>
+
+                    <audio src="assets/musiques/pauline.mpeg" type="audio/mp3" controls></audio>
+                    
+                </div>
+            
+            </label>
+
+    <!-- CARD 13 -->
+
+            <input type="checkbox" id="flip13" class="checkbox">
+            <label for="flip13" class="playlist-card playlist-card13">
+                
+
+                <div class="front">
+                    <div class="img">
+                        <img src="assets/images-album/renard.png" alt="">
+                    </div>
+
+                <a href="https://parcdesmilleroses.000webhostapp.com/" target="_blank">
+                    <button class="btn-play">
+                        <img src="assets/play_14441317.png" alt="Play"> 
+                    </button>
+                </a>
+
+                    <a href="">
+                        <h2>Parc des milles roses</h2>
+                    </a>
+
+                    <p>Guillame</p>
+
+                    <input type="checkbox" id="heart13" class="checkbox">
+                    <label for="heart13" class="favorie">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+
+                    <i class="fa-solid fa-circle-plus"></i>
+
+                </div>
+
+                <div class="back">
+                    <div class="avatar">
+                        <img src="assets/avatars/renard.png" alt="">
+                    </div>
+
+                    <audio src="assets/musiques/guillaume.mp3" type="audio/mp3" controls></audio>
+                    
+                </div>
+            
+            </label>
+
+    <!-- CARD 14 -->
+
+            <input type="checkbox" id="flip14" class="checkbox">
+            <label for="flip14" class="playlist-card playlist-card14">
+                
+
+                <div class="front">
+                    <div class="img">
+                        <img src="assets/images-album/mangas-anime.png" alt="">
+                    </div>
+
+                <a href="https://manga-passion-cnam.000webhostapp.com/" target="_blank">
+                    <button class="btn-play">
+                        <img src="assets/play_14441317.png" alt="Play"> 
+                    </button>
+                </a>
+
+                    <a href="">
+                        <h2>Mangas Passion</h2>
+                    </a>
+
+                    <p>Damien F</p>
+
+                    <input type="checkbox" id="heart14" class="checkbox">
+                    <label for="heart14" class="favorie">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+
+                    <i class="fa-solid fa-circle-plus"></i>
+
+                </div>
+
+                <div class="back">
+                    <div class="avatar">
+                        <img src="assets/avatars/mangas.png" alt="">
+                    </div>
+
+                    <audio src="assets/musiques/damien.f.mpeg" type="audio/mp3" controls></audio>
+                    
+                </div>
+            
+            </label>
+            
+
+    <!-- CARD 15 -->
+
+            <input type="checkbox" id="flip15" class="checkbox">
+            <label for="flip15" class="playlist-card playlist-card15">
+                
+
+                <div class="front">
+                    <div class="img">
+                        <img src="assets/images-album/annee-80-90.png" alt="">
+                    </div>
+
+                <a href="https://les-annees-80-90.000webhostapp.com" target="_blank">
+                    <button class="btn-play">
+                        <img src="assets/play_14441317.png" alt="Play"> 
+                    </button>
+                </a>
+
+                    <a href="">
+                        <h2>Les années 80-90</h2>
+                    </a>
+                    
+                    <p>Nathalie</p>
+
+                    <input type="checkbox" id="heart15" class="checkbox">
+                    <label for="heart15" class="favorie">
+                        <i class="fa-solid fa-heart"></i>
+                    </label>
+
+                    <i class="fa-solid fa-circle-plus"></i>
+                    
+                </div>
+
+                <div class="back">
+                    <div class="avatar">
+                        <img src="assets/avatars/annee-80.png" alt="">
+                    </div>
+
+                    <audio src="assets/musiques/nathalie.mp3" type="audio/mp3" controls></audio>
+                    
+                </div>
+            
+            </label>
             
         </div>
-    </section>        
+    </section>
+    
+    <div class="music-player">
+        <input type="checkbox" id="playPause" class="play-pause"/>
+        <label for="playPause" class="control-buttons play-pause"></label>
+        <div class="song-bar">
+            <audio controls>
+                <source src="assets/musiques/menu.mp3" type="audio/mpeg">
+            </audio>
+            <div class="song-infos">
+                <div class="image-container">
+                    <img src="assets/logo.png" alt="UniWeb Music" />
+                </div>
+                <div class="song-description">
+                    <p class="title">
+                       WebMusic
+                    </p>
+                    <p class="artist">Choé,Damien.B,Dyaln,Gaby,Jérémy</p>
+                </div>
+            </div>
+            <div class="icons">
+                <i class="far fa-heart"></i>
+                <i class="fab fa-facebook-f"></i> <!-- Facebook icon -->
+                <i class="fab fa-twitter"></i> <!-- Twitter icon -->
+                <i class="fab fa-instagram"></i> <!-- Instagram icon -->
+            </div>
+        </div>
+        
+        <div class="progress-controller">
+            <div class="control-buttons">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="play-pause fas fa-play"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-undo-alt"></i>
+            </div>
+            <div class="progress-container">
+                <span>0:49</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <span>3:15</span>
+            </div>
+        </div>
+        <div class="other-features">
+            <i class="fas fa-list-ul"></i>
+            <i class="fas fa-desktop"></i>
+            <div class="volume-bar">
+                <i class="fas fa-volume-down"></i>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
         
 </body>
 </html>
