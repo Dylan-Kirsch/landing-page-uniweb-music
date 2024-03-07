@@ -2,8 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #080935;
     background-size: cover;
+    background-image: url(../assets/gradient.jpg);
 }
 
 .checkbox {
@@ -39,9 +39,72 @@ header {
     color: #fff;
 }
 
-.search {
+.header-content span {
+    background-color: #0004b5;
+    color: #fff;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    letter-spacing: 0.8px;
+}
+
+.header-content span:hover {
+    background-color: #0017f7;
+}
+
+.search-box {
     margin-right: 60px;
     margin-left: 65px;
+}
+
+.input-search {
+    height: 29px;
+    width: 0px;
+    border-style: none;
+    padding-left: 29px;
+    font-size: 1em;
+    letter-spacing: 2px;
+    outline: none;
+    transition: all .5s ease-in-out;
+    color: #ff0000;
+    border-radius: 18px;
+}
+
+.input-search::placeholder {
+    color: #000000;
+    font-size: 1em;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.btn-search {
+    width: 32px;
+    height: 32px;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    color: #000000;
+    background-color: #dd0000;
+}
+
+.btn-search:focus ~ .input-search {
+    width: 211px;
+    background-color: #fff;
+    margin-left: 10px;
+    transition: all 500ms cubic-bezier(.58,0,.19,1);
+    box-shadow: -36px 13px 28px -6px #000;
+}
+
+.input-search:focus {
+    width: 0px;
+    background-color: #f9f9f9;
+    margin-left: 11px;
+    transition: all 500ms cubic-bezier(.58,0,.19,1);
+    box-shadow: -36px 13px 28px -6px #000;
 }
 
 header .profil {
@@ -165,7 +228,6 @@ h2 {
     width: 238px;
     height: 223px;
     object-fit: cover;
-    border-radius: 8px;
 }
 
 .back img {
@@ -188,7 +250,6 @@ audio {
     bottom: -116px;
     left: 30px;
     transform: scale(0.794);
-    border-radius: 0px 0px 10px 10px;
 }
 
 .img {
@@ -206,6 +267,7 @@ audio {
 .front a {
     position: relative;
     bottom: -24px;
+    text-decoration: none;
 }
 
 .front p {
@@ -537,3 +599,194 @@ audio {
 }
 
 
+/* ******** FAVORIE ********** */
+
+
+.favorie {
+    position: absolute;
+    left: 204px;
+    bottom: -9px;
+    font-size: 1.6em;
+    background-clip: text;
+}
+
+
+/* COEUR 1 */
+
+#heart1:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart1:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 2 */
+
+#heart2:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart2:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 3 */
+
+#heart3:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart3:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 4 */
+
+#heart4:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart4:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 5 */
+
+#heart5:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart5:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 6 */
+
+#heart6:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart6:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 7 */
+
+#heart7:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart7:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 8 */
+
+#heart8:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart8:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 9 */
+
+#heart9:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart9:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 10 */
+
+#heart10:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart10:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 11 */
+
+#heart11:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart11:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 12 */
+
+#heart12:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart12:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 13 */
+
+#heart13:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart13:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 14 */
+
+#heart14:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart14:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
+
+/* COEUR 15 */
+
+#heart15:checked ~ .favorie {
+    color: #e40606;
+    transition: .8s;
+}
+
+#heart15:not(:checked) ~ .favorie {
+    color: #ffffff;
+    transition: .8s;
+}
