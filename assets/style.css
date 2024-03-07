@@ -157,7 +157,7 @@ h2 {
 
 
 .playlist-card:hover {
-    background-color: #000000;
+    background-color: #00000069;
     transition: .5s;
 }
 
@@ -258,7 +258,7 @@ audio {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #1db954;
+    background-color: #ffffff;
     border: none;
     cursor: pointer;
     display: flex;
@@ -269,7 +269,7 @@ audio {
 
 .playlist-card:hover .btn-play {
     opacity: 1;
-    box-shadow: 0px 0px 13px -4px #000;
+    box-shadow: 0px 0px 13px -4px #00000060;
     transition: .4s;
 }
 
@@ -535,3 +535,5 @@ audio {
     75% {border-image: linear-gradient(250deg, rgb(0 0 0),rgba(191, 14, 79, 0.99)) 1;}
     100% {border-image: linear-gradient(360deg, rgb(0 0 0), rgba(8, 2, 179, 0.99)) 1;}
 }
+
+
