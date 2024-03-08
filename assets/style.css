@@ -838,32 +838,26 @@ i.fa-solid.fa-circle-plus:hover {
 .music-player {
     --primary-color: #ddd;
     --secondary-color: #999;
-    --green-color: #2d5;
-    --padding: 1em;
     background-color: #111;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
-    height: 7rem;
     padding: var(--padding);
     color: var(--primary-color);
+    justify-content: space-between;
+    align-items: center;
 }
+
 i{
     color: var(--secondary-color);
 }
 i:hover{
     color: var(--primary-color);
 }
-.song-bar {
-    position: absolute;
-    left: var(--padding);
 
+.song-bar {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 1.5rem;
     width: 25%;
 }
@@ -873,20 +867,22 @@ i:hover{
     align-items: center;
     gap: 1em;
 }
+
 .image-container {
-    --size: 4.5em;
-    flex-shrink: 0;
-    width: var(--size);
-    height: var(--size);
+    width: 25%;
+    height: 8vh;
 }
+
 .image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .song-description p {
     margin: 0.2em;
 }
+
 .title,
 .artist {
     display: -webkit-box;
@@ -894,18 +890,21 @@ i:hover{
     -webkit-line-clamp: 1;
     overflow: hidden;
 }
+
 .title:hover,
 .artist:hover {
     text-decoration: underline;
 }
+
 .artist{
     color: var(--secondary-color);
 }
-.icons{
+
+.icons {
     display: flex;
-    gap: 1em;
-    align-items: center; /* Center align the icons */
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 11px 68px 0 68px;
 }
 
 .icons i {
@@ -917,8 +916,15 @@ i:hover{
 
 /* You might want to add hover effects for the icons */
 .icons i:hover {
-    color: #1db954; 
+    color: #1db954; /* Change color on hover */
 }
+
+
+#middleFooter {
+    width: 57%;
+    padding: 11px 0;
+}
+
 .progress-controller{
     width: 100%;
     display: flex;
@@ -933,17 +939,20 @@ i:hover{
     align-items: center;
     gap: 2em;
 }
-.play-pause{
+
+.play-pause {
     display: inline-block;
-    padding: 1em;
+    padding: 9px 10px;
     background-color: var(--primary-color);
     color: #111;
     border-radius: 50%;
 }
+
 .play-pause:hover{
     transform: scale(1.1);
     color: #111;
 }
+
 .progress-container{
     width: 100%;
     display: flex;
@@ -951,12 +960,15 @@ i:hover{
     justify-content: center;
     gap: 1em;
 }
+
+
 .progress-bar{
     height: 4px;
     border-radius: 10px;
     width: 30%;
     background-color: #ccc4;
 }
+
 .progress{
     position: relative;
     height: 100%;
@@ -964,9 +976,11 @@ i:hover{
     border-radius: 10px;
     background-color: var(--secondary-color);
 }
+
 .progress-bar:hover .progress{
     background-color: var(--green-color);
 }
+
 .progress-bar:hover .progress::after{
     content: "";
     position: absolute;
@@ -978,13 +992,16 @@ i:hover{
     background-color: var(--primary-color);
     transform: translate(50%, calc(2px - 50%));
 }
-.other-features{
-    position: absolute;
-    right: var(--padding);
+
+.other-features {
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    gap: 4em;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
 }
+
 .volume-bar{
     display: flex;
     align-items: center;
