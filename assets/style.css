@@ -626,19 +626,6 @@ audio {
 }
 
 
-/* **** BTN AJOUT ********* */
-
-i.fa-solid.fa-circle-plus {
-    position: absolute;
-    right: 197px;
-    bottom: -14px;
-    font-size: 1.6em;
-}
-
-i.fa-solid.fa-circle-plus:hover {
- color: #ecf00b;
-}
-
 
 /* ******** FAVORIE ********** */
 
@@ -832,6 +819,220 @@ i.fa-solid.fa-circle-plus:hover {
     transition: .8s;
 }
 
+/* COEUR 16 */
+
+#heart16:checked ~ .reseau i {
+    color: #e40606;
+    transition: .8s;
+    font-size: 18px;
+}
+
+#heart16:not(:checked) ~ .reseau i {
+    color: #ffffff;
+    transition: .8s;
+    font-size: 18px;
+}
+
+
+
+/* **** BTN AJOUT ********* */
+
+.plus {
+    position: absolute;
+    right: 197px;
+    bottom: -14px;
+    font-size: 1.6em;
+}
+
+
+/*  AJOUT 1 */
+    
+#ajout1:checked ~ .plus {
+    color: #ecf00b ;
+    transition: .5s ;
+}
+    
+#ajout1:not(:checked) ~ .plus {
+    color: #fff ;
+    transition: .5s ;
+}
+
+/*  AJOUT 2 */
+    
+#ajout2:checked ~ .plus {
+    color: #ecf00b ;
+    transition: .5s ;
+}
+    
+#ajout2:not(:checked) ~ .plus {
+    color: #fff ;
+    transition: .5s ;
+}
+
+/*  AJOUT 3 */
+    
+#ajout3:checked ~ .plus {
+    color: #ecf00b ;
+    transition: .5s ;
+}
+    
+#ajout3:not(:checked) ~ .plus {
+    color: #fff ;
+    transition: .5s ;
+}
+
+/*  AJOUT 4 */
+    
+#ajout4:checked ~ .plus {
+    color: #ecf00b ;
+    transition: .5s ;
+}
+    
+#ajout4:not(:checked) ~ .plus {
+    color: #fff ;
+    transition: .5s ;
+}
+
+/*  AJOUT 5 */
+    
+#ajout5:checked ~ .plus {
+    color: #ecf00b ;
+    transition: .5s ;
+}
+    
+#ajout5:not(:checked) ~ .plus {
+    color: #fff ;
+    transition: .5s ;
+}
+
+/*  AJOUT 6 */
+    
+#ajout6:checked ~ .plus {
+    color: #ecf00b ;
+    transition: .5s ;
+}
+    
+#ajout6:not(:checked) ~ .plus {
+    color: #fff ;
+    transition: .5s ;
+}
+
+/*  AJOUT 7 */
+    
+#ajout7:checked ~ .plus {
+    color: #ecf00b ;
+    transition: .5s ;
+}
+    
+#ajout7:not(:checked) ~ .plus {
+    color: #fff ;
+    transition: .5s ;
+}
+
+/*  AJOUT 8 */
+    
+#ajout8:checked ~ .plus {
+    color: #ecf00b ;
+    transition: .5s ;
+}
+    
+#ajout8:not(:checked) ~ .plus {
+    color: #fff ;
+    transition: .5s ;
+}
+
+/*  AJOUT 9 */
+    
+#ajout9:checked ~ .plus {
+    color: #ecf00b ;
+    transition: .5s ;
+}
+    
+#ajout9:not(:checked) ~ .plus {
+    color: #fff ;
+    transition: .5s ;
+}
+
+/*  AJOUT 10 */
+    
+#ajout10:checked ~ .plus {
+    color: #ecf00b ;
+    transition: .5s ;
+}
+    
+#ajout10:not(:checked) ~ .plus {
+    color: #fff ;
+    transition: .5s ;
+}
+
+/*  AJOUT 11 */
+    
+#ajout11:checked ~ .plus {
+    color: #ecf00b ;
+    transition: .5s ;
+}
+    
+#ajout11:not(:checked) ~ .plus {
+    color: #fff ;
+    transition: .5s ;
+}
+
+/*  AJOUT 12 */
+    
+#ajout12:checked ~ .plus {
+    color: #ecf00b ;
+    transition: .5s ;
+}
+    
+#ajout12:not(:checked) ~ .plus {
+    color: #fff ;
+    transition: .5s ;
+}
+
+/*  AJOUT 13 */
+    
+#ajout13:checked ~ .plus {
+    color: #ecf00b ;
+    transition: .5s ;
+}
+    
+#ajout13:not(:checked) ~ .plus {
+    color: #fff ;
+    transition: .5s ;
+}
+
+/*  AJOUT 14 */
+    
+#ajout14:checked ~ .plus {
+    color: #ecf00b ;
+    transition: .5s ;
+}
+    
+#ajout14:not(:checked) ~ .plus {
+    color: #fff ;
+    transition: .5s ;
+}
+
+/*  AJOUT 15 */
+    
+#ajout15:checked ~ .plus {
+    color: #ecf00b ;
+    transition: .5s ;
+}
+    
+#ajout15:not(:checked) ~ .plus {
+    color: #fff ;
+    transition: .5s ;
+}
+
+
+
+
+
+
+
+
+
 @import url(//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
 
 
@@ -883,18 +1084,11 @@ i:hover{
     margin: 0.2em;
 }
 
-.title,
-.artist {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    overflow: hidden;
+.song-description a {
+    text-decoration: none;
+    color: #fff;
 }
 
-.title:hover,
-.artist:hover {
-    text-decoration: underline;
-}
 
 .artist{
     color: var(--secondary-color);
@@ -907,7 +1101,7 @@ i:hover{
     padding: 11px 68px 0 68px;
 }
 
-.icons i {
+.icons .facebook i, .icons .twitter i, .icons .instagram i  {
     color: #fff; /* Icon color */
     margin-right: 10px; /* Space between icons */
     cursor: pointer; /* Change cursor to pointer to indicate clickable items */
@@ -915,7 +1109,7 @@ i:hover{
 }
 
 /* You might want to add hover effects for the icons */
-.icons i:hover {
+.icons .facebook i:hover, .icons .twitter i:hover, .icons .instagram i:hover {
     color: #1db954; /* Change color on hover */
 }
 
