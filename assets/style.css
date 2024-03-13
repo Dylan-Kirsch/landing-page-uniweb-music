@@ -31,8 +31,8 @@ header {
 }
 
 .search-box {
-    margin-right: 100px;
-    margin-left: 829px;
+    margin-right: 157px;
+    margin-left: 232px;
 }
 
 .input-search {
@@ -65,7 +65,7 @@ header {
     outline: none;
     cursor: pointer;
     position: absolute;
-    top: 29px;
+    top: 27px;
     color: #000000;
     background-color: #dd0000;
 }
@@ -122,11 +122,11 @@ header {
 }
 
 .profil img {
-    width: 40%;
+    width: 3%;
     border-radius: 50px;
-    position: relative;
-    left: 63px;
-    bottom: -1px;
+    position: absolute;
+    left: 1252px;
+    bottom: 581px;
     transform: scale(1.5);
 }
 
