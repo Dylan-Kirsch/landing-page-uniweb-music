@@ -1195,6 +1195,23 @@ i:hover{
 }
 
 
+
+
+.playlist-card:hover {
+    transform: rotateY(15deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* ******************************** */
 /* ******** RESPONSIVE ************ */
 
@@ -1349,6 +1366,37 @@ i:hover{
         top: -6px;
         position: relative;
         left: 85px;
+    }
+
+}
+
+@media screen and (max-width: 505px) {
+    .profil img {
+        width: 6%;
+        left: 342px;
+        bottom: 870px;
+    
+    }
+
+    .dropProfil {
+        left: 292px;
+        bottom: 687px;
+    }
+
+    .img {
+        height: 163px;
+    }
+
+    .img img {
+        width: 167px;
+        height: 176px;
+    }
+
+    .image-container {
+        width: 14%;
+        height: 5vh;
+        position: absolute;
+        left: 13px;
     }
 
 }
